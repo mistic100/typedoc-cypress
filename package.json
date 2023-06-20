@@ -1,0 +1,15 @@
+{
+  "name": "typedoc-cypress",
+  "private": "true",
+  "scripts": {
+    "ci:build": "rm -rf dist && tsc",
+    "ci:documentation": "rm -rf docs && typedoc src/commands/index.ts"
+  },
+  "dependencies": {
+    "cypress": "^12.14.0",
+    "typescript": "4.9.5"
+  },
+  "devDependencies": {
+    "typedoc": "^0.24.8"
+  }
+}
